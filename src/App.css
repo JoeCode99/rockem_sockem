@@ -1,38 +1,432 @@
-.App {
+.header {
+  background-color: black;
+  font-style: normal;
+  margin-top: -21px;
+  margin-bottom: -30px;
+  height: 70px;
+  padding-left: 20px;
+}
+
+h1 {
+  color: white;
+  line-height: 50px;
+  display: inline-block;
+}
+
+h3 {
+  width: fit-content;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.h4_attack {
+  background-color: #ff076e;
+}
+
+.h4_defence {
+  background-color: #0b30ca;
+}
+
+.top_reduce {
+  margin-top: -30px;
+}
+
+.points_text {
+  margin-top: -45px;
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.points_text_right {
+  text-align: right;
+}
+
+.numbers {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.smaller_numbers {
+  font-size: 25px;
+  padding-left: 1px;
+  font-weight: 600;
+}
+
+.feedback {
+  font-size: 20px;
+  padding-top: 5px;
+  margin: 25px auto;
+}
+
+.end_game_numbers {
+  background-color: #00a878;
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+  margin: auto;
+  padding: 0 5px;
+}
+
+.restart_button {
+  display: inline-block;
+  margin: auto;
+}
+
+h4 {
+  border: 1px solid black;
+  border-bottom: none;
+  color: white;
+  font-size: 40px;
+  margin: 0px;
+}
+
+p {
+  margin: 10px;
+}
+
+h2 {
+  display: inline-block;
+  background-color: #e63946;
+  padding: 10px;
+  color: white;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.final_score {
+  margin-top: -30px;
+  display: inline-block;
+  padding: 5px;
+  color: black;
+  font-size: 40px;
+}
+
+.description {
+  text-align: left;
+  margin: auto;
+  margin-top: 50px;
+  width: 1024px;
+  background-color: white;
+}
+
+.end_game {
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 1024px;
+}
+
+.center_maker {
+  display: inline-block;
+}
+
+.center_button {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-position: inside;
+  text-align: left;
+  list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.curr_score {
+  margin-top: -20px;
+  text-align: center;
+  float: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.curr_score_text {
+  padding: 0 3px;
+}
+
+.curr_score_number {
+  margin-top: -7px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #0b30ca;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #080708;
+  cursor: pointer;
+}
+
+.modal_button {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.modal_button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+.clue {
+  background-color: #080708;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  border: 1px solid #080708;
+  cursor: pointer;
+}
+
+.clue:hover {
+  background-color: #313638;
+}
+
+.submit_button {
+  background-color: #00a878;
+  padding: 5px;
+  margin-right: 0px;
+  border: 1px solid #080708;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  width: fit-content;
+  float: right;
+}
+
+.submit_button:hover {
+  background-color: #080708;
+}
+
+.next_button {
+  margin-top: -15px;
+}
+
+.button:hover {
+  background-color: #ff076e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  color: black;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
+.intro_img {
+  height: 200px;
+  padding-top: 50px;
+  margin: 0 20px;
+  float: right;
+}
+
+.parent_grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto;
+}
+
+.child_grid {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+  height: 640px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.child_grid_select {
+  display: grid;
+  justify-content: left;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto auto;
+  border: 1px solid black;
+  height: 100px;
+  overflow: auto;
+  padding: 5px;
+  margin-top: -30px;
+}
+
+.child_grid_submit {
+  display: grid;
+  grid-template-columns: 133px 133px 133px;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid black;
+  height: 205px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.placeholder {
+  margin: auto;
+  color: grey;
+  font-size: 20px;
+  margin-left: 162px;
+}
+.footer {
+  height: 50px;
+}
+
+.card {
+  display: inline-grid;
+  height: 200px;
+}
+
+.card_select {
+  display: inline-grid;
+  height: 100px;
+}
+
+.ad {
+  display: inline-grid;
+  text-align: center;
+}
+
+/* Scrollbar stuff */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* End of Scrollbar CSS */
+
+/* Modal */
+.card:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: show; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: inline-block;
+  max-width: 300px;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  margin-top: 100px;
+  width: 800px;
+}
+
+.modal-grid-item {
+  display: grid;
+  justify-content: center;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 0px;
+  border-left: 1px solid white;
+  font-size: 20px;
+  height: fit-content;
+  text-align: left;
+  max-width: 450px;
+  color: #ccc;
+}
+
+.caption {
+  font-weight: bold;
+  font-size: 40px !important;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
   from {
-    transform: rotate(0deg);
+    transform: scale(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* END OF MODAL */
+
+.container_card {
+  display: inline-grid;
+  height: 200px;
+  cursor: pointer;
+}
+
+.hover_text {
+  position: relative;
+  bottom: 60px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  margin: 10px 0;
+  line-height: 10px;
+  width: 92.5px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container_card:hover .hover_text {
+  opacity: 1;
 }
